@@ -1,0 +1,15 @@
+# Line-ending law: sources are LF everywhere, forever.
+# Prevents Windows Git (core.autocrlf) from converting .sh/.py to CRLF,
+# which silently breaks them inside the Linux container.
+* text=auto
+*.sh   text eol=lf
+*.py   text eol=lf
+*.qmd  text eol=lf
+*.yml  text eol=lf
+*.json text eol=lf
+*.scss text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf
+*.ipynb text eol=lf
+*.png  binary
+*.zip  binary
