@@ -1,0 +1,27 @@
+Lab 4 logbook — the filtered mission
+Write a number after each "=" (no units). Keep every KEY exactly as written.
+
+BEFORE YOU RUN, predict: how far, in cm, will the truth walk away from your
+robot's belief across the 5 s blackout? Lecture 5: the truth walks away from
+it at exactly the model's error. Your water sinks at SINK; the model believes
+0.03 m/s.
+PREDICTED_DRIFT =
+
+YOUR NUMBERS, the same two as in my_numbers(). SEED is the number the starter
+drew for you on your first run. SINK is your one real choice: your water's sink
+rate, any value from 0.031 to 0.050 m/s, with exactly three decimals. The
+model believes 0.03, so the gap between your SINK and 0.03 is the error your
+estimator must correct for.
+SEED =
+SINK =
+
+YOUR RUN, copied from your self-check's lines under checks [2] and [3]:
+SETTLES =
+DEPTH_JITTER =
+CMD_JITTER =
+DRIFT =
+
+IN YOUR WORDS, one sentence each:
+1. Did DRIFT match PREDICTED_DRIFT? Why, or why not?
+2. Your vehicle settles deeper than its 1.2 m target. Why does the filter not
+   fix that?

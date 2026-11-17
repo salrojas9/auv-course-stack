@@ -11,7 +11,9 @@ mission, and a full dive-cruise-surface run — using the same `step`,
 Run me from the repo root:   python3 lab3/mission_capstone.py
 I self-grade: 3 checks. 3/3 = submit on Canvas (this file + logbook).
 
-LOGBOOK (submit alongside the code):
+Submit TWO files in ONE submission:  [ mission_capstone.py ] + [ logbook.txt ]
+
+LOGBOOK (answer in logbook.txt):
   1. Your chosen Kp, its PREDICTED hold offset 0.03/Kp [m] (Lecture 4,
      "Why it never quite arrives"), and the MEASURED offset this file
      prints. Do they agree? One sentence why.
@@ -37,6 +39,8 @@ def battery_step(v, cmd):
 
     Effort this tick is |u| + |r| + |w| (add the absolute values of the
     three commands). Voltage drops by DRAIN * effort * DT.
+    A thruster in reverse still burns charge — abs() or your battery
+    charges on the way up.
     Pattern: one line of arithmetic, then return the new voltage.
     """
     raise NotImplementedError("implement me — one Euler step, but for charge")
@@ -79,6 +83,8 @@ def run_capstone(Kp):
     raise NotImplementedError("implement me — the loop you built in class, grown up")
 
 
+# Run the scaffold — don't edit it. Your work goes above this line; the
+# self-check below is the harness's, and the grader runs its own copy.
 # ----------------------- self-check: do not edit below -----------------------
 if __name__ == "__main__":
     ok = 0

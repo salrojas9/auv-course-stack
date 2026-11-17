@@ -19,7 +19,9 @@ This is everything you run. Lecture notes and Week 0 lessons come from Canvas.
                      self-grade, submit on Canvas
 - `lab3/`          — Lab 3 starter (`mission_capstone.py`): battery, safety
                      abort, full mission — run from the repo root to self-grade
-- `sim/`           — `hello_robot.py`, the fake AUV (read it; Lab 3 imports it)
+- `lab4/`          — Lab 4 starter (`lab4_mission.py` + `logbook.txt`): the
+                     filtered mission — run from the repo root to self-grade
+- `sim/`           — `hello_robot.py`, the fake AUV (read it; Labs 3 and 4 import it)
 - `scripts/`       — the environment check + the Week 0 treasure hunt
                      (`bash scripts/setup_hunt.sh`, then hunt, then
                       `bash scripts/check_hunt.sh`)

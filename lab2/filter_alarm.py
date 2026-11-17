@@ -9,7 +9,9 @@ Implement the two functions below, then run this file to grade yourself:
 Rules: implement moving_average from your Lecture 3 notes WITHOUT peeking at
 the filled slides. The self-check at the bottom tells you PASS/FAIL per part.
 
-Logbook questions (answer in your submission text):
+Submit TWO files in ONE submission:  [ filter_alarm.py ] + [ logbook.txt ]
+
+Logbook questions (answer them in logbook.txt):
   1. With N = 40 the alarm fires late. How late, in seconds?
   2. Would you bet a $2,000 vehicle on N = 40? What N do you choose,
      and what did you trade away to get it?
@@ -33,6 +35,8 @@ def depth_alarm(t, filtered, limit):
     raise NotImplementedError("implement me — loop, condition, return early")
 
 
+# Run the scaffold — don't edit it. Your work goes above this line; the
+# self-check below is the harness's, and the grader runs its own copy.
 # ----------------------- self-check: do not edit below -----------------------
 if __name__ == "__main__":
     rng = np.random.default_rng(3)
